@@ -1,0 +1,34 @@
+name: White Paper
+markdown: redcarpet
+pygments: true
+url:
+paginate: 8
+description: Fagner Carvalho
+intro: Fagner Carvalho
+subtitle: Novas tecnicidades e o meu dia-a-dia no TI
+logo: logo.png
+disqus_shortname: fagnerblog
+# url: http://gotchacode.com
+#Comment out url when working locally to resolve base urls correctly
+url:
+
+# Owner/author information
+owner:
+  name:           Fagner Carvalho
+  avatar:         https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xpa1/t1.0-9/541589_449200775168493_1682353219_n.jpg
+  email:          fagnerncarvalho@gmail.com
+  # Social networking links used in footer. Update and remove as you like.
+  #twitter:
+  github:         https://github.com/fagnercarvalho
+  #stackexchange:
+  # For Google Authorship https://plus.google.com/authorship
+  google_plus:    https://plus.google.com/111373715138599649043
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# Links to include in top navigation
+# For external links add external: true
