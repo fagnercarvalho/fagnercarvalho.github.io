@@ -4,4 +4,4 @@ README.md
 Description
 -------
 
-My Resume online, plain and simple!
+My blog, plain and simple!

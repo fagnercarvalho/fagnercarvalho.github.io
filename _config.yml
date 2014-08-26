@@ -1,16 +1,17 @@
-name: White Paper
+name: Fagner Carvalho
 markdown: redcarpet
 pygments: true
 url:
 paginate: 8
-description: Fagner Carvalho
+paginate_path: "page:num"
 intro: Fagner Carvalho
-subtitle: Novas tecnicidades e o meu dia-a-dia no TI
+desc: Novas tecnicidades e o meu dia-a-dia no TI
 logo: logo.png
-disqus_shortname: fagnerblog
+disqus: fagnerblog
 # url: http://gotchacode.com
 #Comment out url when working locally to resolve base urls correctly
-url: http://fagner.co
+url:
+#keywords: some, keywords, metatags
 
 # Owner/author information
 owner:

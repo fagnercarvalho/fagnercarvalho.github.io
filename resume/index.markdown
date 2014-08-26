@@ -1,5 +1,5 @@
 ---
-layout: sobre
+layout: page
 ---
 
 # Fagner Carvalho
