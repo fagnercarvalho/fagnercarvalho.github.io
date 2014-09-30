@@ -5,8 +5,9 @@ layout: page
 # Fagner Carvalho
 ## Desenvolvedor de software
 
-> [fagnerncarvalho@gmail.com](fagnerncarvalho@gmail.com)  
-> (51) 8410 6970
+> fagnerncarvalho at gmail dot com
+
+> Skype: fagner.nc
 
 ------
 
@@ -58,9 +59,14 @@ Formado em Sistemas de Informação em 2013
 
 ### Experiência
 
+__Mobiltec__
+: *Desenvolvedor*  
+  __09/2014 até hoje__  
+  Desenvolvimento de APIs em .NET e em JavaScript.
+
 __HP__
 : *Desenvolvedor*  
-  __01/2013 até hoje__  
+  __01/2013 até 09/2014__  
   Desenvolvimento de serviços em .NET para cliente da área de seguros e automatização de processos com soluções Microsoft.
 
 __HP__
