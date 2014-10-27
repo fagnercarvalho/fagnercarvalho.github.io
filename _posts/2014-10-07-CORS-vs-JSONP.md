@@ -3,7 +3,7 @@ layout: post
 title: "CORS vs JSONP"
 date: 2014-10-07
 comments: true
-categories: programming javascript web api
+categories: programming web
 ---
 
 Hello! 
@@ -23,8 +23,7 @@ In the code below you can see a simple example using the polymer-jsonp [web comp
 
 {% highlight javascript linenos %}
 <polymer-jsonp auto url="http://api.bf4stats.com/api/playerInfo?name={{name}}&plat={{platform}}&output=jsonp&opt=names,imagePaths&callback="
-response="{{response}}" on-polymer-response="{{responseHandler}}">
-</polymer-jsonp>
+response="{{response}}" on-polymer-response="{{responseHandler}}"/>
 {% endhighlight %}
 
 ## CORS
