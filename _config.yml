@@ -1,35 +1,26 @@
 name: Fagner Carvalho
+description: Just another day in IT
+meta_description: "Fagner Carvalho: just another day in IT"
+
 markdown: redcarpet
-pygments: true
-url:
-paginate: 8
-paginate_path: "page:num"
-intro: Fagner Carvalho
-desc: Novas tecnicidades e o meu dia-a-dia no TI
-logo: logo.png
-disqus: fagnerblog
-# url: http://gotchacode.com
-#Comment out url when working locally to resolve base urls correctly
-url:
-#keywords: some, keywords, metatags
+highlighter: pygments
+logo: false
+paginate: 10
+baseurl: /
+domain_name: 'fagner.co'
+
+# Details for the RSS feed generator
+url:            'blog url'
+author:         'Your Name'
+
+page:
+  disqus:           fagnerblog
 
 # Owner/author information
 owner:
   name:           Fagner Carvalho
-  avatar:         https://fbcdn-sphotos-g-a.akamaihd.net/hphotos-ak-xpa1/t1.0-9/541589_449200775168493_1682353219_n.jpg
+  description:	  I simply another passionate about new technologies and the things that you can do with it. 
+  avatar:         /assets/images/profile.jpg
   email:          fagnerncarvalho@gmail.com
-  # Social networking links used in footer. Update and remove as you like.
-  #twitter:
   github:         https://github.com/fagnercarvalho
-  #stackexchange:
-  # For Google Authorship https://plus.google.com/authorship
   google_plus:    https://plus.google.com/111373715138599649043
-
-# Analytics and webmaster tools stuff goes here
-google_analytics:
-google_verify:
-# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:
-
-# Links to include in top navigation
-# For external links add external: true
