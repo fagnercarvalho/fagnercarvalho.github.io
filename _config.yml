@@ -10,8 +10,8 @@ baseurl: /
 domain_name: 'fagner.co'
 
 # Details for the RSS feed generator
-url:            'blog url'
-author:         'Your Name'
+url:            'fagner.co'
+author:         'Fagner Carvalho'
 
 page:
   disqus:           fagnerblog
