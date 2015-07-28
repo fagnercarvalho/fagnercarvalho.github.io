@@ -3,9 +3,9 @@ layout: page
 title: My resume
 ---
 
-> fagnerncarvalho at gmail dot com
-
-> Skype: fagner.nc
+<p class="message">
+  If you want to see more about my past experiences and skills, schedule a interview, hire me as your freelancer or anything job-related contact me at my Linkedin profile <a href="https://br.linkedin.com/in/fagnerncarvalho">clicking here</a> or send me a email at fagnerncarvalho at gmail dot com.
+</p>
 
 ------
 
@@ -16,7 +16,7 @@ Minhas áreas focais são desenvolvimento e arquitetura de software com foco em 
 
 Tenho uma enorme gana por aprender cada vez mais sobre desenvolvimento de software. Metodologias, padrões, ferramentas, linguagens, ou seja, tudo relacionado a área técnica.
 
-Comecei a me envolver na área de TI aos 12 anos. Desde lá, criei alguns jogos usando o XNA, mexi com JavaScript (e vários de seus incontáveis frameworks e bibliotecas!), Java, C#, VB6 (!!). Hoje, aos 22 anos, procuro me especializar: me formei na PUCRS e foquei em soluções .NET
+Comecei a me envolver na área de TI aos 12 anos. Desde lá, criei alguns jogos usando o XNA, mexi com JavaScript (e vários de seus incontáveis frameworks e bibliotecas!), Java, C#, VB6 (!!). Hoje, aos 22 anos, procuro me especializar: me formei na PUCRS e foquei em soluções .NET.
 
 No entanto, quero mais! Como é possível ver nos meus interesses (na seção abaixo) quero trabalhar com NoSQL, Node.js e outras novas tecnologias! Vejo o Brasil como um grande espaço para explorar novas tecnologias e desenvolver soluções utilizando elas. Bom, é isso, não vou me estender muito, espero que não tenha cansado de ler tudo isso! Ah e se chegou até aqui, obrigado!
 
@@ -57,9 +57,14 @@ Formado em Sistemas de Informação em 2013
 
 ### Experiência
 
+__Freelancer__
+: *Desenvolvedor*  
+  __05/2015 até hoje__  
+  Trabalhando em diversos clientes nas áreas legais e de saúde focando-se principalmente no desenvolvimento de APIs utilizando tecnologias open-source como Nancy e Angular.js.
+
 __Mobiltec__
 : *Desenvolvedor*  
-  __09/2014 até hoje__  
+  __09/2014 até 04/2015__  
   Desenvolvimento de APIs em .NET e em JavaScript.
 
 __HP__
