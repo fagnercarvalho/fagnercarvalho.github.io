@@ -1,26 +1,31 @@
-name: Fagner Carvalho
-description: Just another day in IT
-meta_description: "Fagner Carvalho: just another day in IT"
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
 
-markdown: redcarpet
-highlighter: pygments
-logo: false
-paginate: 10
-baseurl: /
-domain_name: 'fagner.co'
+# Permalinks
+permalink:        pretty
+relative_permalinks: true
 
-# Details for the RSS feed generator
-url:            'fagner.co'
-author:         'Fagner Carvalho'
+# Setup
+title:            Fagner
+tagline:          'Just another day in IT.'
+description: >
+    Hello, welcome!<br/>
+    Here I share everything that I learnt (or not).<br/>
+    Have a good stay!<br/>
+url:              http://fagner.co
+baseurl:          /
 
-page:
-  disqus:           fagnerblog
+author:
+  name:           'Fagner Carvalho'
+  url:            https://twitter.com/fagnerncarvalho
 
-# Owner/author information
-owner:
-  name:           Fagner Carvalho
-  description:	  I simply another passionate about new technologies and the things that you can do with it. 
-  avatar:         /assets/images/profile.jpg
-  email:          fagnerncarvalho@gmail.com
-  github:         https://github.com/fagnercarvalho
-  google_plus:    https://plus.google.com/111373715138599649043
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+github:
+  repo:           https://github.com/fagnercarvalho
+
+disqus:           fagnerblog

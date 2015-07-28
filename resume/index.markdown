@@ -1,9 +1,7 @@
 ---
 layout: page
+title: My resume
 ---
-
-# Fagner Carvalho
-## Desenvolvedor de software
 
 > fagnerncarvalho at gmail dot com
 

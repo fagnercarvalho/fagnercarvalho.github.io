@@ -1,0 +1,9 @@
+/*
+	Remove Text Decoration and Link Underline from Font-Awesome with CSS
+*/
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  text-decoration: none;
+  display: inline-block;
+  speak: none;
+}
