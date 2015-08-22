@@ -41,8 +41,6 @@ Alguns pontos legais levantados durante a palestra:
 
 Palestra bastante esperada, o Felipe nos conta em detalhes toda a história do aplicativo do Spotify para o desktop e como ocorreu a última migração para um codebase 100% web com JS.
 
-Hoje a arquitetura da aplicação está mais ou menos assim:
-
 Alguns pontos:
 
 * A primeira versão da aplicação ficou sem utilização por 1 ano até que as gravadoras começassem a gradativamente aceitar o Spotify
