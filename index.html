@@ -23,7 +23,12 @@ title: Home
       </a>
     </h1>
 
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
+    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">
+      {{ post.date | date_to_string }} on
+      {% for category in post.categories %}
+        <a href="{{ site.baseurl }}{{ category }}">{{ category }}</a>
+      {% endfor %}
+    </time>
 
     {{ post.excerpt }}
   </div>

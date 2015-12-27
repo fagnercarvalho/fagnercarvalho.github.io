@@ -4,7 +4,12 @@ layout: default
 
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">{{ page.date | date_to_string }}</span>
+  <span class="post-date">
+    {{ page.date | date_to_string }} on
+    {% for category in page.categories %}
+        <a href="{{ site.baseurl }}{{ category }}">{{ category }}</a>
+    {% endfor %}
+  </span>
   {{ content }}
 </div>
 
@@ -30,4 +35,4 @@ layout: default
 {% endif %}
 
 <!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55b2bf106104f26c" async="async"></script>  
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-55b2bf106104f26c" async="async"></script>
