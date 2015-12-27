@@ -4,9 +4,10 @@ title: "CORS vs JSONP"
 date: 2014-10-07
 comments: true
 categories: programming web
+redirect_from: "programming/web/2014/10/07/CORS-vs-JSONP/"
 ---
 
-Hello! 
+Hello!
 So, here I am again! Sorry for the delay, almost 2 months since I last posted here. Anyway, I here today to talk about CORS and JSONP. Basically I will introduce the terms and cite some implementation examples using JavaScript and ASP.NET WebAPI (because I am a .NET fan, of course!).
 
 
@@ -27,8 +28,8 @@ response="{{response}}" on-polymer-response="{{responseHandler}}"/>
 {% endhighlight %}
 
 ## CORS
-Instead of using a hack you can use a better a safe way: CORS. 
-CORS stands for "Cross-Origin Resource Sharing". CORS introduced a new HTTP header to allow cross-domain requests called "Access-Control-Allow-Origin". 
+Instead of using a hack you can use a better a safe way: CORS.
+CORS stands for "Cross-Origin Resource Sharing". CORS introduced a new HTTP header to allow cross-domain requests called "Access-Control-Allow-Origin".
 
 Using ASP.NET WebAPI, If you want to enable CORS you just need to follow this 3 simple steps:
 

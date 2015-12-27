@@ -4,6 +4,7 @@ title: "Resumo do primeiro dia do BrazilJS 2015"
 date: 2015-08-22
 comments: true
 categories: programming javascript
+redirect_from: "programming/javascript/2015/08/22/Resumo-primeiro-dia-BrazilJS-2015/"
 ---
 
 Daí pessoal, tudo certo? Resolvi fazer este post com um pequeno resumo das palestras do primeiro dia do BrazilJS 2015.
@@ -24,7 +25,7 @@ Alguns pontos interessantes que ele levantou:
 * O comentário mais importante dele: "quando as coisas deixaram de ser desenvolvidas para produção?", se referindo a bibliotecas e frameworks em JS que não eram consideradas production-ready
 * No final das contas ele basicamente "detona" a ideia de transpilar código ES6 para ES5, frameworks como Angular e React e ambientes fechados como o que temos em NodeJS. O que ele defende é utilizar o ES6 diretamente e principalmente no browser. Por mais que se diga que essas funcionalidades são muito novas e estariam lentas ou com problemas a ideia do Chris seria utilizá-las o quanto antes com dados reais numa aplicação real para que os problemas possam ser encontrados e corrigidos e os bottlenecks de performance possam ser elimininados.
 Alguns links:
-	* [A boa e velha tabela de compatibilidade do ES6](https://kangax.github.io/compat-table/es6/) 
+	* [A boa e velha tabela de compatibilidade do ES6](https://kangax.github.io/compat-table/es6/)
 	* [Testes para "conformance" das funcionalidades do ES](https://github.com/tc39/test262)
 	* [Testes de performance para do ES6](http://kpdecker.github.io/six-speed/) (várias funcionalidades estão lentas mas vão melhorar com o tempo, naturalmente)
 

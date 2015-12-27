@@ -3,7 +3,7 @@ markdown:         redcarpet
 highlighter:      pygments
 
 # Permalinks
-permalink:        pretty
+permalink: /:year/:month/:day/:title
 relative_permalinks: true
 
 # Setup
@@ -21,6 +21,9 @@ author:
   url:            https://twitter.com/fagnerncarvalho
 
 paginate:         5
+
+gems:
+  - jekyll-redirect-from
 
 # Custom vars
 version:          2.1.0

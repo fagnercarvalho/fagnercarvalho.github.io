@@ -4,15 +4,16 @@ title: "Null propagator operator on C# 6.0"
 date: 2014-10-26
 comments: true
 categories: programming csharp
+redirect_from: "programming/csharp/2014/10/26/Null-propagator-operator/"
 ---
 
-Hello again! Today I going to talk briefly about a specific feature from the next version of C#: the not so new null propagator operator. Yes, its been awhile since C# 6 was announced but I want to talk about this, so you cant do anything to stop me! 
+Hello again! Today I going to talk briefly about a specific feature from the next version of C#: the not so new null propagator operator. Yes, its been awhile since C# 6 was announced but I want to talk about this, so you cant do anything to stop me!
 The main reason I talking about this its because since I saw the [proposal](https://visualstudio.uservoice.com/forums/121579-visual-studio/suggestions/3990187-add-operator-to-c) for implementing the operator in C# I really liked and hoped that Microsoft implement, and he did it! In the latest Visual Studio 2014 CTP version the operator was there and of course I looked. Veredict: tested and approved!
 
 ## Null propagator operator?
 
-So, in the first place, this operator is new only in C#. A lot of programming languages already have it. 
-Like [Damien Guard](http://damieng.com/blog/2013/12/09/probable-c-6-0-features-illustrated) pointed out this operator  exists in [Groovy](http://groovy.codehaus.org/Operators#Operators-SafeNavigationOperator%28?.%29), where is known as the 'safe navigation operator', that bring me to right to the usefulness of this operator: avoid Null reference exception when trying to access a null reference object, of course! 
+So, in the first place, this operator is new only in C#. A lot of programming languages already have it.
+Like [Damien Guard](http://damieng.com/blog/2013/12/09/probable-c-6-0-features-illustrated) pointed out this operator  exists in [Groovy](http://groovy.codehaus.org/Operators#Operators-SafeNavigationOperator%28?.%29), where is known as the 'safe navigation operator', that bring me to right to the usefulness of this operator: avoid Null reference exception when trying to access a null reference object, of course!
 But how this is done? You all know how to do a null reference exception in your code, everyone does that once in a while. Yes, is stupid but it happens, and the new null propagator operator comes here to solve this once and for all.
 
 Like Linus said someday: 'Talk is cheap. Show me the code'. So, there it is:
@@ -52,7 +53,7 @@ namespace NullPropagator
 }
 {% endhighlight %}
 
-The new operator is shown in line 14, where its used two times. So, what happens if the Bear object has not instantiated? Or the Friends property? If you dont use the null propagator you probably get a null reference exception in your face. But in the code above this wont happen again. 
+The new operator is shown in line 14, where its used two times. So, what happens if the Bear object has not instantiated? Or the Friends property? If you dont use the null propagator you probably get a null reference exception in your face. But in the code above this wont happen again.
 
 ## So, why?
 
