@@ -7,7 +7,7 @@ layout: default
   <span class="post-date">
     {{ page.date | date_to_string }} on
     {% for category in page.categories %}
-        {{ category }}
+        <a href="{{ 'categories/' | prepend: site.baseurl | append: category }}">{{ category }}</a>
     {% endfor %}
   </span>
   {{ content }}
