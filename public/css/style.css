@@ -28,6 +28,16 @@
   color: inherit;
 }
 
+/* sidebar */
+
+.sidebar-icons a:hover, .sidebar-icons a:focus {
+  text-decoration: none !important;
+  color: #268bd2;
+}
+
+.sidebar-rss-icon a:hover, .sidebar-rss-icon a:focus {
+  color: #FA9D39;
+}
 /*
  * Themes
  *

@@ -7,7 +7,7 @@
         </a>
       </h1>
       <p class="lead">{{ site.description }}</p>
-    </div> 
+    </div>
 
     <nav class="sidebar-nav">
       <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.baseurl }}">Home</a>
@@ -27,7 +27,7 @@
         {% endfor %}
       </p>
 
-      <p>
+      <p class="sidebar-icons">
         <a href="https://github.com/fagnercarvalho">
           <i class="fa fa-github-square fa-2x"></i>
         </a>
@@ -42,9 +42,11 @@
         </a>
       </p>
     </nav>
-    <a href="{{ site.baseurl }}atom.xml">
-      <i class="fa fa-rss-square fa-2x"></i>
-    </a> 
+    <div class="sidebar-rss-icon">
+      <a href="{{ site.baseurl }}atom.xml">
+        <i class="fa fa-rss-square fa-2x"></i>
+      </a>
+    </div>
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>
 </div>
