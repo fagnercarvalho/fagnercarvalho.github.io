@@ -19,27 +19,19 @@ First you just need to follow the previously cited Quick Start Tutorial [clickin
 If you follow this tutorial carefully everything will run smoothly but if you are like me maybe you pass through the same problems.
 At first I was struggling trying to find a way to install the management plugin, a plugin that provides a nice web interface where you can manage your server queues. So, after awhile, I discover that I need to run the following command (using cmd):
 
-{% highlight text %}
-rabbitmq-plugins enable rabbitmq_management
-{% endhighlight %}
+{% gist d64236bf015c3a263d0d enable-rabbitmq.cmd %}
 
 This command need to be executed pointing to the 'C:\Program Files (x86)\RabbitMQ Server\rabbitmq_server-version\sbin' folder. But, for some reason, I cant seem to access my interface presumably located in http://localhost:15647. After spending some time I found and run a rabbitmq-server.bat located in the sbin folder, where I finally can see my error:
 
-{% highlight text %}
-ERROR: epmd error for host MYHOST: address (cannot connect to host/port).
-{% endhighlight %}
+{% gist d64236bf015c3a263d0d weird-error %}
 
 For some reason RabbitMQ cant seem to know that MYHOST need to be translated to localhost/127.0.0.1 resulting in a server shutdown. To solve this particular problem I just needed to run the following command in cmd:
 
-{% highlight text %}
-SETX COMPUTERNAME localhost.
-{% endhighlight %}
+{% gist d64236bf015c3a263d0d set-computername.cmd %}
 
 After that I run this command in the sbin folder:
 
-{% highlight text %}
-rabbitmq-server restart
-{% endhighlight %}
+{% gist d64236bf015c3a263d0d restart-rabbitmq.cmd %}
 
 After that my server starts succesfully and I finally can use the EasyNetQ!
 

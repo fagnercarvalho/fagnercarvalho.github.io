@@ -18,40 +18,7 @@ But how this is done? You all know how to do a null reference exception in your 
 
 Like Linus said someday: 'Talk is cheap. Show me the code'. So, there it is:
 
-{% highlight csharp linenos %}
-using System;
-using System.Collections.Generic;
-
-namespace NullPropagator
-{
-    public class Program
-    {
-        public static void Main(string[] args)
-        {
-            Bear b = new Bear { Claws = 2, Friends = new List<Bear>() { new Bear() } };
-
-            Console.WriteLine("Claws: " + b.Claws);
-
-            int? countFriends = b?.Friends?.Count;
-            if (countFriends.HasValue && countFriends > 0)
-            {
-                Console.WriteLine("Friends: " + countFriends);
-            }
-            else
-            {
-                Console.WriteLine("The bear has no friends.");
-            }
-            Console.Read();
-        }
-    }
-
-    public class Bear
-    {
-        public int Claws { get; set; }
-        public List<Bear> Friends { get; set; }
-    }
-}
-{% endhighlight %}
+{% gist 75e62ba490db8ea8f0f0 null-propagator-operator.cs %}
 
 The new operator is shown in line 14, where its used two times. So, what happens if the Bear object has not instantiated? Or the Friends property? If you dont use the null propagator you probably get a null reference exception in your face. But in the code above this wont happen again.
 

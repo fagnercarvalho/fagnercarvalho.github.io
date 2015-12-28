@@ -16,69 +16,15 @@ As you may know dependency injection helps us programmers to control code depend
 
 For example, in Java, using Spring Framework, you just use something like this:
 
-{% highlight java linenos %}
-package com.ecommerce.shop;
-
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
-
-
-@Service
-public class OrderService {
-  private IRepository repository;
-
-  @Autowired
-  public void setRepository(IRepository repository) {
-    this.repository = repository;
-  }
-}
-{% endhighlight %}
+{% gist 19a0af7b0234bf8b0b55 di.java %}
 
 In AngularJS, the $scope parameter passed thought every Controller on your app that represents the DOM elements from the page are created using dependency injection:
 
-{% highlight javascript %}
-function UserController($scope) {
-
-   $scope.currentUser = {
-      firstName: "John",
-      lastName: "Doe"
-   };
-
-}
-{% endhighlight %}
+{% gist 19a0af7b0234bf8b0b55 di.js %}
 
 And finally, in C#, using Ninject:
 
-{% highlight csharp linenos %}
-public class Main {
-    public static void Main(string args[]) {
-        Bind<IClaw>().To<Claw>();
-
-        IKernel kernel = new StandardKernel();
-        var bear = kernel.Get<Bear>();
-        bear.Run();
-    }
-}
-
-public class Bear
-{
-    public List<IClaw> Claws
-    {
-        get;
-        private set;
-    }
-
-    public Bear(List<IClaw> claws)
-    {
-        Claws = claws;
-    }
-
-    public bool Run()
-    {
-        this.Claws.Move();
-    }
-}
-{% endhighlight %}
+{% gist 19a0af7b0234bf8b0b55 di.cs %}
 
 You can have 3 types of DI:
 
@@ -95,66 +41,11 @@ MongoDB CSharp Driver, as the name says, is a library provived to access MongoDB
 The code snippet below provides a simple way to use DI with Ninject to instantiate MongoDB Driver classes.
 You just need to associate classes to interfaces and say to Ninject that he needs to create a Object instance when a IObject is indicated.
 
-{% highlight csharp linenos %}
-public class Startup
-{
-        public void Configuration(IAppBuilder appBuilder)
-        {
-            appBuilder.UseNinjectMiddleware(CreateKernel).UseNinjectWebApi(config);
-        }
-
-        private static StandardKernel CreateKernel()
-        {
-            var kernel = new StandardKernel();
-            kernel.Load(Assembly.GetExecutingAssembly());
-
-            RegisterServices(kernel);
-
-            return kernel;
-        }
-
-        private static void RegisterServices(IKernel kernel)
-        {
-            kernel.Bind<MongoClient>().ToSelf().WithConstructorArgument("connectionString", "mongodb://localhost:27017");
-
-            kernel.Bind<MongoServer>().ToMethod(ctx => ctx.ContextPreservingGet<MongoClient>().GetServer());
-
-            kernel.Bind<MongoDatabase>().ToMethod(ctx => ctx.ContextPreservingGet<MongoServer>()
-                .GetDatabase("DatabaseName"));
-
-            kernel.Bind<MongoCollection>().ToMethod(ctx => ctx.ContextPreservingGet<MongoDatabase>()
-                .GetCollection(ctx.Request.ParentRequest.Service.GetGenericArguments().First().Name));
-        }
-    }
-}
-{% endhighlight %}
+{% gist 19a0af7b0234bf8b0b55 di-mongo.cs %}
 
 Then you just need to create your code and Ninject, if properly configured, will instantiate your objects automatically.
 
-{% highlight csharp linenos %}
-public class Repository<T> : IRepository<T> where T : Entity
-    {
-        protected readonly MongoClient client;
-        protected readonly MongoServer server;
-        protected readonly MongoDatabase database;
-        protected readonly MongoCollection collection;
-
-
-        public Repository(MongoClient client, MongoServer server, MongoDatabase database, MongoCollection collection)
-        {
-            this.client = client;
-            this.server = server;
-            this.database = database;
-            this.collection = collection;
-        }
-
-        public void Add(T t)
-        {
-            this.collection.Save(t);
-        }
-
-}
-{% endhighlight %}
+{% gist 19a0af7b0234bf8b0b55 repository.cs %}
 
 So, thats it! If you have any questions you are free to ask in the commentary box below.
 
