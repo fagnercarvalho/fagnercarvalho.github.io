@@ -1,5 +1,5 @@
 # Dependencies
-markdown:         redcarpet
+markdown:         kramdown
 highlighter:      pygments
 
 # Permalinks
@@ -23,9 +23,13 @@ paginate:         5
 
 gems:
   - jekyll-redirect-from
+  - jekyll-paginate
+  - jekyll-gist
+  - pygments.rb
+  - classifier-reborn
 
 # Custom vars
-version:          2.1.0
+version:          3.0
 
 github:
   repo:           https://github.com/fagnercarvalho
