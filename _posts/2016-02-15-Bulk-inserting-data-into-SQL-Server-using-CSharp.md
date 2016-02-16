@@ -33,6 +33,6 @@ Microsoft SQL Server 2014 - 12.0.2000.8 (X64)   Feb 20 2014 20:04:26   Copyright
 The first thing you may notice was the `bcp` there. Yes, `bcp` wasn't run from C# but I wanted to add to the list for comparison purposes.
 
 Well, basically all methods listed had very similar results but if you are searching for the fastest one you choose `SqlBulkCopy`.
-Moreover, the remaining methods got more than one disadvantage besides performance: the `bcp` needs to receive a `.csv` file, Table-Valued Parameter needs to have a procedure and obviously a 'Table-Valued Parameter' in the target database, `Simple.Data` needs a third party library installed, `Simple.Data` and XQuery needs a `.xml` file and also a procedure created in the database.
+Moreover, the remaining methods got more than one disadvantage besides performance: the `bcp` needs to receive a `.csv` file, Table-Valued Parameter (TVP) needs to have a TVP Type in the target database, `Simple.Data` needs a third party library installed, `Simple.Data` and XQuery needs a `.xml` file and also a procedure created in the database.
 
 If you are interested in take a look at the code that generated the results [I added the test code in GitHub](https://github.com/fagnercarvalho/bulk-insert-sqlserver-csharp/blob/master/BulkInsertSqlServer/Program.cs). In the code you will see that I tested Dapper but the performance was bad and I decided to remove from the test results. I also used the `Parallel.For` method but the performance was even worse.
