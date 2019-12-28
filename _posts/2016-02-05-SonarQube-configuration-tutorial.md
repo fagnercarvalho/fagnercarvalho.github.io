@@ -93,11 +93,11 @@ the ``<sonar_scanner_directory>``
 
 After a successful SonarQube analysis you are going to see something similar to this:
 
-![SonarQube successful analysis]({{ site.baseurl }}public/images/sonarqube-successful-analysis.png)
+![SonarQube successful analysis]({{ site.url }}public/images/sonarqube-successful-analysis.png)
 
 Just go to the indicated link (http://localhost:9000/dashboard/index/YourProject) and then see the SonarQube analysis report.
 
-![SonarQube analysis report]({{ site.baseurl }}public/images/sonarqube-report.png)
+![SonarQube analysis report]({{ site.url }}public/images/sonarqube-report.png)
 
 **References**
 

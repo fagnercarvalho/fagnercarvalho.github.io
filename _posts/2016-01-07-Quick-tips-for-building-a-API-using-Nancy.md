@@ -9,7 +9,7 @@ categories: programming csharp nancy
 Hello! I writing this brief post to help everyone that is using Nancy for the first time to not make the same mistakes that I did. I'm not even remotely interested in covering all possible aspects involved in developing a web application using Nancy, I just thought I'd share some of my mental notes gathered a few months ago. So, here we go.
 
 ## Know how to properly use CORS
-If you are using [CORS]({{ site.baseurl }}2014/10/07/CORS-vs-JSONP) avoid to use the wildcard in the Access-Control-Allow-Headers CORS header because he can have unpredictable behavior.
+If you are using [CORS]({{ site.url }}2014/10/07/CORS-vs-JSONP) avoid to use the wildcard in the Access-Control-Allow-Headers CORS header because he can have unpredictable behavior.
 
 To use CORS in Nancy just do as follows (in Nancy Bootstrapper class):
 

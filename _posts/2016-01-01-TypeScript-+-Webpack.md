@@ -78,12 +78,12 @@ This file is self-explanatory. A TypeScript configuration file. [Access tsconfig
 {% gist 5894313be602cbab3367 webpack.config.js %}
 
 10- In command prompt, run the command webpack. You are going to see something like this:
-![Webpack command output]({{ site.baseurl }}public/images/webpack-command-output.png)
+![Webpack command output]({{ site.url }}public/images/webpack-command-output.png)
 
 11- Run a local server pointing to the folder containing your newly created app. You can use anything that you got at your disposal like a [Python local server](https://docs.python.org/2/library/simplehttpserver.html), a [Node local server](https://www.npmjs.com/package/http-server), a [Ruby local server](http://apidock.com/ruby/Object/httpd) and so on.
 
 12- Access your favorite browser and see the result.
-![Application running]({{ site.baseurl }}public/images/browser-app-running.png)
+![Application running]({{ site.url }}public/images/browser-app-running.png)
 Noice.
 
 So, that's it! You learned how to use TypeScript and Webpack together to build a scalable frontend app. If you want to access the full code linked to this post please clone my [TypeScript + Webpack Github repository](https://github.com/fagnercarvalho/typescript-webpack).

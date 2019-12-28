@@ -10,7 +10,7 @@ Hello! A few months ago I did a freelance gig in which I found myself having tro
 
 This things are commonly called 'cross-cutting concerns', a concept brought from Aspect-Oriented programming, and they unfortunately don't work well with Object-Oriented programming [[1]](#ref1). This happens because in every object you feel the need to use a cross-cutting concern you are going to reference a object that defines the concern you are looking for, like a Logger class. Now imagine that you need to audit your code and so every operation happening in your system needs to be logged. Yes, this is bad.
 
-![Cross-cutting in OO]({{ site.baseurl }}public/images/cross-cutting-in-oo.png)
+![Cross-cutting in OO]({{ site.url }}public/images/cross-cutting-in-oo.png)
 <small>
 Figure 1. Crosscutting concerns in a OO language (from Rashid, 2010, p. 24)
 </small>

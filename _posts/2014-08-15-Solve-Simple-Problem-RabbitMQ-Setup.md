@@ -7,7 +7,7 @@ categories: programming csharp
 redirect_from: "programming/csharp/2014/08/15/Solve-Simple-Problem-RabbitMQ-Setup/"
 ---
 
-![RabbitMQ]({{ site.baseurl }}public/images/RabbitMQLogo.png)
+![RabbitMQ]({{ site.url }}public/images/RabbitMQLogo.png)
 
 Hello!
 So, for you that dont know what is exactly RabbitMQ, let me briefly explain before anything else: RabbitMQ is a framework that provides a messaging system based on the AMQP standard ([click here to know more](http://en.wikipedia.org/wiki/Advanced_Message_Queuing_Protocol)).
