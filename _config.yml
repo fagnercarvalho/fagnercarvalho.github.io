@@ -9,9 +9,8 @@ permalink: /:year/:month/:day/:title/
 title:            'Fagner Nunes Carvalho'
 description: >
     Hello, welcome!<br/>
-    I'm a freelance/consultant/coder focusing on .NET, C# and JS.<br/>
-    I have been working in the field in the last decade for Fortune 500 companies like HP and Accenture and also for small startups.<br/>
-    Currently working from home for <a href="https://twitter.com/amcsgroup1">@AMCSGroup</a> as a .NET Consultant and <a href="https://twitter.com/amcsgroup1">@ModusCreate</a> as a Senior .NET Engineer.
+    I'm a freelance/consultant focusing on .NET, C# and JS.<br/>
+    Working from home for <a href="https://twitter.com/amcsgroup1">@AMCSGroup</a> as a .NET Consultant and <a href="https://twitter.com/amcsgroup1">@ModusCreate</a> as a Senior .NET Engineer.
 url:              http://fagner.co/
 baseurl:          /
 
