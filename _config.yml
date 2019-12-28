@@ -6,8 +6,8 @@ highlighter:      rouge
 permalink: /:year/:month/:day/:title/
 
 # Setup
-title:            Fagner
-tagline:          'Just another day in IT.'
+title:            'Fagner Nunes Carvalho'
+tagline:          ''
 description: >
     Hello, welcome!<br/>
     Here I share everything that I learnt (or not).<br/>
@@ -16,7 +16,7 @@ url:              http://fagner.co
 baseurl:          /
 
 author:
-  name:           'Fagner Carvalho'
+  name:           'Fagner Nunes Carvalho'
   url:            https://twitter.com/fagnerncarvalho
 
 paginate:         5
