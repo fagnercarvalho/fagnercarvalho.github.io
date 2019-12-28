@@ -20,6 +20,6 @@ The `chat.js` is responsible for handling all client logic for connecting and di
 
 Now, a screenshot showing the chat running:
 
-![OmegleR]({{ site.baseurl }}public/images/OmegleR.png)
+![OmegleR]({{ site.url }}public/images/OmegleR.png)
 
 If you want to get access to the source code please go to [OmegleR GitHub repository](https://github.com/fagnercarvalho/OmegleR).
