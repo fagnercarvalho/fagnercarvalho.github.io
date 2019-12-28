@@ -7,7 +7,6 @@ permalink: /:year/:month/:day/:title/
 
 # Setup
 title:            'Fagner Nunes Carvalho'
-tagline:          ''
 description: >
     Hello, welcome!<br/>
     Here I share everything that I learnt (or not).<br/>
