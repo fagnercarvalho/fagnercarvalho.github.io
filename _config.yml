@@ -9,8 +9,8 @@ permalink: /:year/:month/:day/:title/
 title:            'Fagner Nunes Carvalho'
 description: >
     Hello, welcome!<br/>
-    I'm a freelance/consultant focusing on .NET, C# and JS.<br/>
-    Working from home as a developer, architect and consultant.
+    I'm a freelance/consultant focusing on C#, Go and JS.<br/>
+    Working from home since 2015 as a developer, architect and consultant.
 url:              http://fagner.co/
 baseurl:          /
 
