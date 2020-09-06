@@ -6,7 +6,9 @@ comments: true
 categories: csharp dotnet aspnet razor console web
 ---
 
-This week I was looking for a way to do live reloading in ASP.NET Core projects. Don't judge me but I actually never cared that much about live reloading, I lived life in a constant state of stopping and starting applications every after a few changes. What changed is that after working with React for a few months I really liked the idea of reflecting changes from your code in the application instantly (well, almost).
+This week I was looking for a way to do live reloading in ASP.NET Core projects. 
+
+Don't judge me but I actually never cared that much about live reloading, I lived life in a constant state of stopping and starting applications every after a few changes. What changed is that after working with React for a few months I really liked the idea of reflecting changes from your code in the application instantly (well, almost).
 
 For ASP.NET Core projects you need to do a few changes in your code to enable live reloading.
 
