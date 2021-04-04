@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Live reload in .NET Core"
-date: 2019-09-06
+date: 2020-09-06
 comments: true
 categories: csharp dotnet aspnet razor console web
 ---
