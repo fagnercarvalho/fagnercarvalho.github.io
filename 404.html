@@ -1,10 +1,43 @@
----
-layout: default
-title: "404: Page not found"
-permalink: 404.html
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+	<style>
+        body {
+            background: #0d0d0d;
+            color: #00ffcc;
+            font-family: 'Orbitron', sans-serif;
+        }
+        .neon-border {
+            border: 3px solid #00ffcc;
+            box-shadow: 0 0 10px #00ffcc, 0 0 40px #00ffcc;
+        }
+    </style>
+</head>
+<body class="flex justify-center items-center h-screen bg-black text-green-400 font-mono relative overflow-hidden">
+    <div class="text-center p-8 neon-border rounded-lg w-96">
+        <h1 class="text-5xl font-bold text-green-300 shadow-md">404</h1>
+        <p class="text-green-300 mt-2 text-lg">Oops! The page you are looking for does not exist.</p>
+        <p class="text-green-300 mt-2 text-lg">If you are looking for a post in my blog, please click <a id="dynamicLink">here</a>.</p>
+        <div class="mt-4">
+            <a href="/" class="text-lg hover:text-green-500 shadow-sm">Return Home</a>
+        </div>
+    </div>
+</body>
+<script>
+	function convertUrlFormat(oldPath) {
+		return "post/" + oldPath
+			.replace(/\//g, "-")
+			.replace(/^-|-$/g, "")
+			.toLowerCase();
+	}
 
-<div class="page">
-  <h1 class="page-title">404: Page not found</h1>
-  <p class="lead">Sorry, we've misplaced that URL or it's pointing to something that doesn't exist. <a href="{{ site.url }}">Head back home</a> to try finding it again.</p>
-</div>
+	const oldPath = window.location.pathname;
+	const newPath = convertUrlFormat(oldPath);
+
+	document.getElementById("dynamicLink").href = "https://blog.fagner.co/" + newPath;
+</script>
+</html>

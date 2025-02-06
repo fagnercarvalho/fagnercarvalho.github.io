@@ -1,3 +1,3 @@
 # fagnercarvalho.github.io
 
-My blog, plain and simple!
+My personal site, plain and simple!

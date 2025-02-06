@@ -1,50 +1,33 @@
----
-layout: default
-title: Home
----
-
-<div class="posts">
-  {% for post in paginator.posts %}
-  {% if post.external-url %}
-  <div class="post">
-  <h1 class="post-title">
-    <a href="{{ post.external-url }}" title="{{ post.title }}">
-    {{ post.title | truncate: 40, "..." }}
-    </a>
-  </h1>
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_string }}</time>
-    {{ post.excerpt | truncate: 350 }}
-  </div>
-  {% else %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
-
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">
-      {{ post.date | date_to_string }} on
-      {% for category in post.categories %}
-        <a href="{{ 'categories/' | prepend: site.url | append: category }}">{{ category }}</a>
-      {% endfor %}
-    </time>
-
-    {{ post.excerpt | truncate: 350 }}
-  </div>
-  {% endif %}
-  {% endfor %}
-</div>
-
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{paginator.next_page_path}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    <a class="pagination-item newer" href="{{paginator.previous_page_path}}">Newer</a>
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fagner Nunes Carvalho</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+	<style>
+        body {
+            background: #0d0d0d;
+            color: #00ffcc;
+            font-family: 'Orbitron', sans-serif;
+        }
+        .neon-border {
+            border: 3px solid #00ffcc;
+            box-shadow: 0 0 10px #00ffcc, 0 0 40px #00ffcc;
+        }
+    </style>
+</head>
+<body class="flex justify-center items-center h-screen bg-black text-green-400 font-mono relative overflow-hidden">
+    <div class="text-center p-8 neon-border rounded-lg w-50">
+        <img src="avatar.jpg" alt="Avatar" class="w-48 h-48 rounded-full border-4 border-green-400 mb-4 mx-auto shadow-lg">
+        <h1 class="text-3xl font-semibold text-green-300 shadow-md">Fagner Nunes Carvalho</h1>
+        <p class="text-green-300 mt-2">Developer that likes observability, Developer Experience and fishing 🎣.</p>
+        
+        <div class="mt-4 space-y-2">
+            <a href="https://blog.fagner.co" target="_blank" class="block text-lg hover:text-green-500 shadow-sm">Blog</a>
+            <a href="https://github.com/fagnercarvalho" target="_blank" class="block text-lg hover:text-green-500 shadow-sm">GitHub</a>
+            <a href="https://linkedin.com/in/fagnerncarvalho" target="_blank" class="block text-lg hover:text-green-500 shadow-sm">LinkedIn</a>
+        </div>
+    </div>
+</body>
+</html>
